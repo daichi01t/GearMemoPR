@@ -1,0 +1,148 @@
+:root {
+  --page-bg: #f7f8f4;
+  --frame-shadow: 0 24px 80px rgba(56, 76, 61, 0.12);
+  --focus: #3f9752;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top right, rgba(219, 226, 215, 0.85), transparent 24%),
+    linear-gradient(180deg, #fcfdf9 0%, var(--page-bg) 100%);
+  font-family:
+    "Hiragino Sans",
+    "Yu Gothic",
+    "Noto Sans JP",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.landing-page {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+}
+
+.mockup-frame {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--frame-shadow);
+}
+
+.mockup-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mockup-links a {
+  position: absolute;
+  display: block;
+  border-radius: 999px;
+  outline: none;
+}
+
+.mockup-links a:focus-visible {
+  box-shadow: 0 0 0 4px rgba(63, 151, 82, 0.28);
+}
+
+.link-nav-feature {
+  left: 45.4%;
+  top: 2.2%;
+  width: 5.2%;
+  height: 2.5%;
+}
+
+.link-nav-howto {
+  left: 55%;
+  top: 2.2%;
+  width: 5.5%;
+  height: 2.5%;
+}
+
+.link-nav-ui {
+  left: 62.3%;
+  top: 2.2%;
+  width: 5.8%;
+  height: 2.5%;
+}
+
+.link-nav-faq {
+  left: 70.2%;
+  top: 2.2%;
+  width: 8.7%;
+  height: 2.5%;
+}
+
+.link-cta-header {
+  left: 82.4%;
+  top: 2%;
+  width: 14.4%;
+  height: 3.1%;
+}
+
+.link-appstore-hero {
+  left: 4.8%;
+  top: 32.6%;
+  width: 14.8%;
+  height: 3.9%;
+  border-radius: 12px;
+}
+
+.link-cta-support {
+  left: 8.2%;
+  top: 63.8%;
+  width: 20.1%;
+  height: 3.9%;
+}
+
+.link-appstore-footer {
+  right: 4.4%;
+  top: 87.2%;
+  width: 15%;
+  height: 3.7%;
+  border-radius: 10px;
+}
+
+.anchor-offset {
+  position: relative;
+  top: -24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .landing-page {
+    padding: 12px 12px 28px;
+  }
+
+  .mockup-frame {
+    border-radius: 12px;
+  }
+}
