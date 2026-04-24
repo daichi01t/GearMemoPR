@@ -6,40 +6,179 @@
     <title>GearMemo | 登山ギア管理アプリ</title>
     <meta
       name="description"
-      content="GearMemoは、ULハイカーのための登山ギア管理アプリです。ラフデザインを忠実に反映したランディングページです。"
+      content="GearMemoは、ULハイカーのための登山ギア管理アプリです。合計重量の確認、装備セット管理、使用記録の振り返りをシンプルに行えます。"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="landing-page">
-      <section class="sr-only">
-        <h1>GearMemo</h1>
-        <p>軽さを、データで、もっと自由に。ULハイカーのための登山ギア管理アプリ。</p>
-        <p>合計重量の確認、装備セット管理、使用記録の振り返りをシンプルに行えます。</p>
-      </section>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="GearMemo トップ">
+          <img src="./assets/images/extracted/logo-mark.png" alt="" />
+          <span>GearMemo</span>
+        </a>
 
-      <section class="mockup-frame" aria-label="GearMemo ランディングページ">
-        <img
-          class="mockup-image"
-          src="./assets/images/web-rough.png"
-          alt="GearMemoのランディングページデザイン"
-        />
+        <nav class="site-nav" aria-label="グローバルナビゲーション">
+          <a href="#features">機能</a>
+          <a href="#usage">使い方</a>
+          <a href="#ui">UIとは</a>
+          <a href="#faq">よくある質問</a>
+        </nav>
 
-        <div class="mockup-links" aria-hidden="false">
-          <a class="link-nav-feature" href="#feature-anchor" aria-label="機能"></a>
-          <a class="link-nav-howto" href="#support-anchor" aria-label="使い方"></a>
-          <a class="link-nav-ui" href="#support-anchor" aria-label="UIとは"></a>
-          <a class="link-nav-faq" href="#footer-anchor" aria-label="よくある質問"></a>
-          <a class="link-cta-header" href="#" aria-label="今すぐはじめる"></a>
-          <a class="link-appstore-hero" href="#" aria-label="App Storeからダウンロード"></a>
-          <a class="link-cta-support" href="#" aria-label="今すぐはじめる（無料）"></a>
-          <a class="link-appstore-footer" href="#" aria-label="App Storeからダウンロード"></a>
+        <a class="pill-button" href="#download">今すぐはじめる</a>
+      </header>
+
+      <main id="top">
+        <section class="hero-section">
+          <div class="hero-copy">
+            <h1>
+              <span class="hero-line">軽さを、データで</span>
+              <span class="hero-line">もっと<span class="hero-accent">自由に</span>。</span>
+            </h1>
+
+            <p>
+              GearMemoは、ULハイカーのための
+              <br />
+              登山ギア管理アプリです。
+            </p>
+
+            <p>
+              合計重量をすぐに確認でき、
+              <br />
+              使用履歴も記録。あなたの山行を、
+              <br />
+              もっとシンプルに、もっと快適に。
+            </p>
+
+            <a class="store-badge" id="download" href="#">
+              <span class="store-badge-apple"></span>
+              <span class="store-badge-text">
+                <strong>App Store</strong>
+                <small>からダウンロード</small>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-blob hero-blob-a"></div>
+            <div class="hero-blob hero-blob-b"></div>
+            <img class="hero-phones" src="./assets/images/extracted/hero-phones.png" alt="" />
+            <div class="hero-ground">
+              <img class="hero-mountains" src="./assets/images/extracted/hero-mountains.png" alt="" />
+              <img class="hero-hiker" src="./assets/images/extracted/hero-hiker.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-grid" id="features">
+          <article class="feature-card">
+            <img src="./assets/images/extracted/icon-weight.png" alt="" />
+            <h2>合計重量をすぐに確認</h2>
+            <p>
+              ULハイキングに欠かせない
+              <br />
+              総重量を一目でチェック。
+              <br />
+              軽量化の成果がすぐに分かります。
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <img src="./assets/images/extracted/icon-list.png" alt="" />
+            <h2>装備セットをかんたん管理</h2>
+            <p>
+              シーンごとに装備をまとめて管理。
+              <br />
+              テント泊、日帰りなど
+              <br />
+              複数のセットを作成できます。
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <img src="./assets/images/extracted/icon-calendar.png" alt="" />
+            <h2>使用記録で振り返る</h2>
+            <p>
+              いつ、どこで、どんな装備を使ったか
+              <br />
+              記録を残せます。
+              <br />
+              次の山行の改善に役立ちます。
+            </p>
+          </article>
+        </section>
+
+        <section class="support-section" id="usage">
+          <div class="support-copy">
+            <h2>
+              ULハイカーのための、
+              <br />
+              シンプルで強力な相棒。
+            </h2>
+
+            <ul class="check-list">
+              <li>直感的な操作で、誰でもすぐに使える</li>
+              <li>オフラインでも使える安心設計</li>
+              <li>これからも、ULハイカーと一緒に進化します</li>
+            </ul>
+
+            <a class="pill-button large" href="#download">今すぐはじめる（無料）</a>
+          </div>
+
+          <div class="support-visual-wrap" id="ui">
+            <img src="./assets/images/extracted/support-visual.png" alt="テントとギアのイラスト" />
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="faq">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="#top" aria-label="GearMemo トップ">
+            <img src="./assets/images/extracted/logo-mark.png" alt="" />
+            <span>GearMemo</span>
+          </a>
+          <p>
+            軽さを、データで、もっと自由に。
+            <br />
+            ULハイカーのためのギア管理アプリ。
+          </p>
+          <div class="social-list" aria-label="ソーシャルリンク">
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="メール">✉</a>
+          </div>
         </div>
-      </section>
 
-      <div id="feature-anchor" class="anchor-offset" aria-hidden="true"></div>
-      <div id="support-anchor" class="anchor-offset" aria-hidden="true"></div>
-      <div id="footer-anchor" class="anchor-offset" aria-hidden="true"></div>
-    </main>
+        <div class="footer-links">
+          <div>
+            <h3>アプリ</h3>
+            <a href="#features">機能</a>
+            <a href="#usage">使い方</a>
+            <a href="#ui">UIとは</a>
+          </div>
+          <div>
+            <h3>サポート</h3>
+            <a href="#faq">よくある質問</a>
+            <a href="#">お問い合わせ</a>
+            <a href="#">プライバシーポリシー</a>
+          </div>
+          <div>
+            <h3>会社情報</h3>
+            <a href="#">運営会社</a>
+            <a href="#">利用規約</a>
+          </div>
+        </div>
+
+        <a class="store-badge footer-store" href="#">
+          <span class="store-badge-apple"></span>
+          <span class="store-badge-text">
+            <strong>App Store</strong>
+            <small>からダウンロード</small>
+          </span>
+        </a>
+
+        <p class="copyright">© 2026 GearMemo. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
