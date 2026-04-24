@@ -101,14 +101,14 @@ img {
 .hero-section {
   display: grid;
   grid-template-columns: 0.92fr 1.08fr;
-  gap: 28px;
+  gap: 20px;
   align-items: center;
   padding: 14px 8px 0;
 }
 
 .hero-copy {
   padding-left: 20px;
-  max-width: 470px;
+  max-width: 430px;
 }
 
 .hero-copy h1 {
@@ -167,7 +167,7 @@ img {
 
 .hero-visual {
   position: relative;
-  min-height: 700px;
+  min-height: 690px;
   overflow: hidden;
 }
 
@@ -177,45 +177,45 @@ img {
 }
 
 .hero-blob-a {
-  top: 40px;
-  right: -18px;
-  width: 90%;
-  height: 78%;
+  top: 46px;
+  right: -8px;
+  width: 88%;
+  height: 76%;
   border-radius: 43% 57% 47% 53% / 32% 36% 64% 68%;
 }
 
 .hero-blob-b {
-  left: -1%;
-  top: 158px;
-  width: 56%;
+  left: 2%;
+  top: 164px;
+  width: 52%;
   height: 48%;
   border-radius: 58% 42% 52% 48% / 44% 37% 63% 56%;
 }
 
 .hero-phones {
   position: absolute;
-  top: 12px;
-  right: -34px;
-  width: 101%;
-  max-width: 708px;
+  top: 18px;
+  right: -8px;
+  width: 96%;
+  max-width: 676px;
 }
 
 .hero-ground {
   position: absolute;
-  left: -18px;
-  bottom: 0;
-  width: 64%;
+  left: -8px;
+  bottom: 6px;
+  width: 60%;
 }
 
 .hero-mountains {
-  width: 100%;
+  width: 92%;
 }
 
 .hero-hiker {
   position: absolute;
-  left: 56%;
-  bottom: 48px;
-  width: 112px;
+  left: 53%;
+  bottom: 60px;
+  width: 98px;
 }
 
 .feature-grid {
@@ -302,9 +302,9 @@ img {
 }
 
 .support-visual-wrap img {
-  width: 108%;
+  width: 98%;
   max-width: none;
-  margin-left: -4%;
+  margin-left: 0;
   margin-top: 8px;
 }
 
@@ -381,6 +381,7 @@ img {
 
   .hero-copy {
     padding-left: 0;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -395,20 +396,32 @@ img {
   }
 
   .hero-visual {
-    min-height: 620px;
+    min-height: 560px;
   }
 
   .hero-phones {
     left: 50%;
     right: auto;
-    width: min(720px, 100%);
+    top: 24px;
+    width: min(640px, 100%);
     transform: translateX(-50%);
   }
 
   .hero-ground {
     left: 50%;
-    width: min(420px, 62%);
+    bottom: 0;
+    width: min(420px, 64%);
     transform: translateX(-50%);
+  }
+
+  .hero-mountains {
+    width: 100%;
+  }
+
+  .hero-hiker {
+    left: 54%;
+    bottom: 34px;
+    width: 92px;
   }
 
   .feature-grid {
@@ -433,6 +446,11 @@ img {
     display: inline-grid;
     margin-right: 10px;
     vertical-align: middle;
+  }
+
+  .support-visual-wrap img {
+    width: min(100%, 620px);
+    margin: 8px auto 0;
   }
 }
 
@@ -470,34 +488,83 @@ img {
   }
 
   .hero-visual {
-    min-height: 450px;
+    min-height: 390px;
   }
 
   .hero-blob-a {
+    top: 28px;
+    right: -10px;
     width: 100%;
-    height: 76%;
+    height: 74%;
+  }
+
+  .hero-blob-b {
+    left: -6%;
+    top: 118px;
+    width: 56%;
+    height: 42%;
   }
 
   .hero-phones {
-    top: 20px;
-    width: 112%;
+    top: 16px;
+    width: 108%;
   }
 
   .hero-ground {
-    width: 76%;
+    bottom: 0;
+    width: 88%;
   }
 
   .hero-hiker {
-    width: 88px;
-    bottom: 26px;
+    left: 56%;
+    width: 70px;
+    bottom: 22px;
+  }
+
+  .feature-card {
+    padding: 34px 18px 30px;
+  }
+
+  .feature-card img {
+    width: 92px;
+  }
+
+  .feature-card h2 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.96rem;
+    line-height: 1.75;
   }
 
   .support-section {
     margin-inline: 0;
-    padding: 26px 20px 22px;
+    padding: 24px 18px 20px;
+  }
+
+  .support-copy h2 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .check-list li {
+    font-size: 0.98rem;
+  }
+
+  .support-visual-wrap img {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .site-footer {
+    gap: 18px;
   }
 
   .footer-links {
     grid-template-columns: 1fr;
+  }
+
+  .footer-store {
+    justify-self: start;
   }
 }
